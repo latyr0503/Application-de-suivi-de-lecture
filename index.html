@@ -52,14 +52,6 @@
           <hr />
         </div>
         <div class="modal__body">
-          <div>
-            <img
-              src="media/female_avatar_user_icon_150289.png"
-              alt=""
-              id="coverLivre"
-            />
-            <input class="inputs" class="inputs" type="file" id="InImg" />
-          </div>
           <div class="modal__input">
             <label for="titre">Titre</label><br />
             <input
@@ -87,19 +79,10 @@
               name="categories"
               placeholder="Entrer la categories du livre"
             />
-            <br />
-            <label for="descriptiom">Descriptiom</label><br />
-            <textarea
-              class="inputs"
-              name="descriptiom"
-              id="descriptiom"
-              rows="10"
-              cols="30"
-            ></textarea>
           </div>
         </div>
         <div class="modal__footer">
-          <button id="modal__button" class="modal__button">Enregistrer</button>
+          <button id="modal__button" onclick="Save()" class="modal__button">Enregistrer</button>
         </div>
       </div>
       <div class="topHead">
@@ -123,84 +106,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="card">
-          <img class="card-image" src="" alt="" />
-          <h4 class="category"></h4>
-          <h3 class="heading">
-            <div class="author">By <span class="name"></span></div>
-          </h3>
-          <lord-icon
-            src="https://cdn.lordicon.com/xekbkxul.json"
-            trigger="hover"
-            style="width: 30px; height: 30px"
-          >
-          </lord-icon>
-        </div>
-        <!-- Mes card
-        <div class="card">
-          <img
-            class="card-image"
-            src="https://img.freepik.com/photos-gratuite/portrait-femme-africaine-portant-accessoires-traditionnels-ecart_23-2148747959.jpg?t=st=1714960035~exp=1714963635~hmac=fed3832506917a8fc3f38c907e9266d48a64787d8cde9b9a30513383f21b6ecc&w=360"
-            alt=""
-          />
-          <h4 class="category">Illustration</h4>
-          <h3 class="heading">
-            A heading that must span over two lines
-            <div class="author">
-              By <span class="name">Abi</span> 4 days ago
-            </div>
-          </h3>
-          <lord-icon
-            src="https://cdn.lordicon.com/xekbkxul.json"
-            trigger="hover"
-            style="width: 30px; height: 30px"
-          >
-          </lord-icon>
-        </div>
-        <div class="card">
-          <img
-            class="card-image"
-            src="https://img.freepik.com/photos-gratuite/portrait-femme-africaine-portant-accessoires-traditionnels-ecart_23-2148747959.jpg?t=st=1714960035~exp=1714963635~hmac=fed3832506917a8fc3f38c907e9266d48a64787d8cde9b9a30513383f21b6ecc&w=360"
-            alt=""
-          />
-          <h4 class="category">Illustration</h4>
-          <h3 class="heading">
-            A heading that must span over two lines
-            <div class="author">
-              By <span class="name">Abi</span> 4 days ago
-            </div>
-          </h3>
-          <lord-icon
-            src="https://cdn.lordicon.com/xekbkxul.json"
-            trigger="hover"
-            style="width: 30px; height: 30px"
-          >
-          </lord-icon>
-        </div>
-        <div class="card">
-          <img
-            class="card-image"
-            src="https://img.freepik.com/photos-gratuite/portrait-femme-africaine-portant-accessoires-traditionnels-ecart_23-2148747959.jpg?t=st=1714960035~exp=1714963635~hmac=fed3832506917a8fc3f38c907e9266d48a64787d8cde9b9a30513383f21b6ecc&w=360"
-            alt=""
-          />
-          <h4 class="category">Illustration</h4>
-          <h3 class="heading">
-            A heading that must span over two lines
-            <div class="author">
-              By <span class="name">Abi</span> 4 days ago
-            </div>
-          </h3>
-          <lord-icon
-            src="https://cdn.lordicon.com/xekbkxul.json"
-            trigger="hover"
-            style="width: 30px; height: 30px"
-          >
-          </lord-icon> -->
+       
         </div>
       </div>
-      <div class="voirPlus">
-        <button>Voir Plus</button>
-      </div>
+    
     </main>
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
