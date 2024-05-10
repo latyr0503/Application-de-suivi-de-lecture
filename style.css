@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --color: #ff500a;
+  --color: #9d2227;
 }
-
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .card {
   padding: 1.5em;
   border-radius: 10px;
@@ -17,17 +22,16 @@
   padding: 50px;
   column-gap: 50px;
   row-gap: 50px;
-  font-family: "Montserrat", sans-serif;
 }
 
 /* bouton */
 button {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 2em;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 15px;
   margin-right: 15px;
+  padding: 0 10px;
   display: inline-block;
   overflow: hidden;
   z-index: 1;
@@ -65,7 +69,6 @@ button:hover::before {
 /* headd  et card*/
 .headd {
   padding: 10px 50px;
-  font-family: "Montserrat", sans-serif;
 }
 .card::before {
   position: absolute;
@@ -86,9 +89,24 @@ button:hover::before {
   left: 0px;
 }
 .topHead {
-  padding: 10px 500px 10px 50px;
-  font-family: "Montserrat", sans-serif;
+  
+  background-image: 
+  linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)),
+  url(https://img.freepik.com/photos-gratuite/livre-lecture-femme-coup-moyen_23-2148950550.jpg?t=st=1715363101~exp=1715366701~hmac=252f53e09966613ed4a1f56ae9086fa1393eeb67f570cca8d73cba2b903f1629&w=996);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
+.topHead div {
+  width: 600px;
+  text-align: start;
+  padding-right: 50px;
+  color: white;
+}
+
 /* ================================================modal============================================= */
 .overlay {
   position: fixed;
@@ -128,7 +146,6 @@ button:hover::before {
 
 .modal__input input {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -136,22 +153,39 @@ button:hover::before {
   margin: 10px 0;
 }
 .modal__input label {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .modal__header h2 {
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
 }
 /* bare de navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
+  background-color: var(--color);
 }
 .divNav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.biblio {
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+  font-size: 40px;
+}
+h2 {
+  font-weight: 800;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.26);
+  font-size: 40px;
+}
+
+h3{
+  font-size: 1.8em;
+  color: var(--color);
+  margin: 15px 0;
+}
+h4{
+  margin: 20px 0;
 }

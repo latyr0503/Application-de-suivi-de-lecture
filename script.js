@@ -45,16 +45,16 @@ function Save() {
   inputs[2].value = "";
 
   // fermeture du modale
-  closeModal();
+  // closeModal();
 
   const divCard = document.createElement("div");
   divCard.classList.add("card");
 
-  const h2 = document.createElement("h2");
-  h2.textContent = titre;
-
   const h3 = document.createElement("h3");
-  h3.textContent = auto;
+  h3.textContent = titre;
+
+  const h4 = document.createElement("h4");
+  h4.textContent = auto;
 
   const p = document.createElement("p");
   p.textContent = categori;
@@ -74,9 +74,9 @@ function Save() {
   button3.textContent = "See Id";
   button3.classList.add("button3");
 
-  divCard.appendChild(h2);
-  divCard.appendChild(p);
   divCard.appendChild(h3);
+  divCard.appendChild(p);
+  divCard.appendChild(h4);
   divCard.appendChild(divButton);
   divButton.appendChild(button1);
   divButton.appendChild(button2);
