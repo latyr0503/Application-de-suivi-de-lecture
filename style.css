@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --color: #ff500a;
   --colorBlue: #0077ff;
 }
 .card {
-  width: 250px;
   background: white;
   padding: 0.4em;
   border-radius: 10px;
@@ -29,7 +28,7 @@
 
 .category {
   text-transform: uppercase;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   color: var(--color);
@@ -42,7 +41,7 @@
 
 .heading {
   font-weight: 600;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(88, 87, 87);
   padding: 7px;
 }
@@ -67,16 +66,16 @@
 }
 .container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto ;
   padding: 50px;
   column-gap: 50px;
   row-gap: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* bouton */
 button {
-  font-family: inherit;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 6em;
   height: 2.6em;
   line-height: 2.5em;
@@ -121,7 +120,7 @@ button:hover::before {
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .card::before {
   position: absolute;
@@ -143,7 +142,7 @@ button:hover::before {
 }
 .topHead {
   padding: 10px 500px 10px 50px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* ================================================modal============================================= */
 .overlay {
@@ -187,21 +186,20 @@ button:hover::before {
 
 .modal__header h2 {
   font-size: 30px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .modal__body p {
   font-size: 16px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .modal__body #coverLivre {
   width: 250px;
   height: 200px;
   object-fit: cover;
-  
 }
 .modal__body {
   display: flex;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* bare de navigation */
 #myInput {
@@ -223,13 +221,13 @@ nav {
 }
 .modal__input input {
   width: 400px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 10px 0;
   height: 30px;
 }
-.divButton{
+.divButton {
   display: flex;
 }
-.divButton button{
+.divButton button {
   font-size: 8px;
 }

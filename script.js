@@ -23,7 +23,8 @@ function Save() {
   const auto = inputs[1].value;
   const categori = inputs[2].value;
   const id = new Date().getTime();
-//  recuperation des donners du localstorage
+  const read = false;
+  //  recuperation des donners du localstorage
   const donner = JSON.parse(localStorage.getItem("Livres")) || [];
 
   // Sauvegarde de mes données dans mon localstorage
@@ -32,13 +33,24 @@ function Save() {
     titre: titre,
     auto: auto,
     categori: categori,
+    read: read,
   };
   donner.push(data);
 
   localStorage.setItem("Livres", JSON.stringify(donner));
 
-  // Création des éléments et ajout à l'élément cible
 
+
+
+
+
+
+
+
+
+
+
+  
   const divCard = document.createElement("div");
   divCard.classList.add("card");
 
@@ -60,13 +72,12 @@ function Save() {
 
   const button2 = document.createElement("button");
   button2.textContent = "Supprimer";
-  button1.classList.add("button2");
+  button2.classList.add("button2");
 
   const button3 = document.createElement("button");
   button3.textContent = "See Id";
-  button1.classList.add("button3");
+  button3.classList.add("button3");
 
-  // affichage des elements
   divCard.appendChild(h2);
   divCard.appendChild(p);
   divCard.appendChild(h3);
@@ -76,10 +87,34 @@ function Save() {
   divButton.appendChild(button3);
   container.appendChild(divCard);
 
-  // suppression des valeurs des champs
   inputs[0].value = "";
   inputs[1].value = "";
   inputs[2].value = "";
+
+  button2.addEventListener("click", function () {
+    const filteredDonner = donner.filter((item) => item.id !== id);
+    localStorage.setItem("Livres", JSON.stringify(filteredDonner));
+    divCard.remove();
+  });
+
+  // marquer comme lu
+
+  if (read == false) {
+    button1.addEventListener("click", function () {
+      h2.style.textDecoration = "line-through";
+      p.style.textDecoration = "line-through";
+      h3.style.textDecoration = "line-through";
+    });
+  }else{
+    h2.style.textDecoration = "underline";
+    p.style.textDecoration = "underline";
+    h3.style.textDecoration = "underline";
+  }
+  // voir l'id sous forme d'alerte
+  button3.addEventListener("click", function () {
+    alert("ID: " + id);
+  });
+
   // fermeture du modale
   closeModal();
 }
